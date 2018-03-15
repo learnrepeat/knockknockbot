@@ -1,0 +1,16 @@
+[app]
+port=5000
+
+[slack]
+clientId=''
+clientSecret=''
+verificationToken=''
+
+[mongo]
+host='localhost'
+port=27017
+dbName='knockknock'
+
+[crypto]
+encryptionKey=''
+ivLength=16

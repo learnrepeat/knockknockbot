@@ -1,0 +1,34 @@
+{
+  "name": "knockknock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=dev NODE_PATH=. nodemon index.js",
+    "start": "NODE_ENV=dev NODE_PATH=. node index.js",
+    "init": "NODE_ENV=dev NODE_PATH=. node scripts/seedScript.js scripts/content/knockknockjokes.csv",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "unit": "NODE_ENV=dev NODE_PATH=. mocha tests/unit/."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/client": "^4.0.0",
+    "body-parser": "^1.18.2",
+    "config": "^1.30.0",
+    "csv-parse": "^2.0.4",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "fuzzball": "^1.0.2",
+    "moment": "^2.21.0",
+    "mongoose": "^5.0.9",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
+    "toml": "^2.3.3",
+    "winston": "^3.0.0-rc2"
+  },
+  "devDependencies": {
+    "should": "^13.2.1",
+    "mocha": "^5.0.4"
+  }
+}
